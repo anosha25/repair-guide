@@ -12,7 +12,9 @@
 .right-content {
     line-height: 1.5em;
     flex: 1;
+    padding-right: 200px;
     margin-right: 200px;
+    width: 700px;
 }
 
 
@@ -45,7 +47,7 @@ body {
 .ingredients {
     font-size: 40%;
     font-weight: 400;
-    margin-left: 450px;
+    margin-left: 400px;
     width: 600px;
     color:black;
     position: relative;
@@ -164,6 +166,10 @@ img.darn {
 }
 
 img.Hem {
+    width: 500px;
+}
+
+img.sewbutton {
     width: 500px;
 }
 
