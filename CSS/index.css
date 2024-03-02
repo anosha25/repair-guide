@@ -3,106 +3,99 @@
     --yellow: #FFFF00;
     --body: #000000;
     --background: hsl(345, 61%, 28%);
+} /* figuring out colour through this, made it easy for me to change colours */
+
+#quote {
+    font-style: italic;
 }
 
-.container {
-    display: flex;
+/*styles for side menu*/
+.menu {
+    color: #FFFF00;
+    line-height: 1.2em;
+    font-family: "futura-pt", sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    text-decoration: none;
+    padding-right: 20px;
+    float: left;
+    width: 20%;
+} 
+/*styles for side menu for list, anchor tag and hover*/
+    .menu ul {
+        list-style: none;
+    }
+
+    .menu a:visited { 
+        color: #FFFF00;
+    }
+
+    .menu a {
+        color: #FFFF00;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        color: var(--purple);
+        font-style: italic;
+    }
+
+/* left-content and right-content are positoned using float and padding for gutters*/
+
+.left-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    width: 15%; 
 }
 
 .right-content {
-    line-height: 1.5em;
-    flex: 1;
-    padding-right: 200px;
-    margin-right: 200px;
-    width: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+    width: 40%;
 }
 
 
+/* @media used for responsive layout when resizing screen, creates single column layout by 
+disabling float when the screen size is 900px or less*/
+@media screen and (max-width: 900px) {
+    .menu,
+    .left-content,
+    .right-content {
+        float: none;
+        width: 100%;
+  }
+}
+
+/*styles applied to body text and background for website*/
 body {
-   background-color: var(--background);
+    color: #FFFF00;
+    background-color: var(--background);
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 2.2em;
 }
 
-
 .ingredients h2 {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 40px;
 }
 
 .ingredients p {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 200;
     width: 400px;
 }
 
-.left-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
 
 .ingredients {
-    font-size: 40%;
+    font-size: 2em;
     font-weight: 400;
-    margin-left: 400px;
     width: 600px;
-    color:black;
-    position: relative;
-    margin-bottom: 50px;
+    color:#FFFF00;
 }
-
-#basicReqs {
-    top: 10px; 
-}
-
-#ladderStitchReqs {
-    top: 1090px
-}
-
-#buttonsReqs {
-    top: 2860px
-}
-
-#holesReqs {
-    top: 5040px
-}
-
-#hemReqs {
-    top: 6530px
-}
-
-.menu {
-    color: #FFFF00;
-    position: fixed;
-    line-height: 1.2em;
-    font-family: "futura-pt", sans-serif;
-    font-weight: normal;
-    font-size: 1em;
-    text-decoration: none;
-}
-
-            ul {
-                list-style: none;
-            }
-
-            a:visited { 
-                color: #FFFF00;
-            }
-
-            a {
-                color: #FFFF00;
-                text-decoration: none;
-            }
-
-            a:hover {
-                color: var(--purple);
-                font-style: italic;
-            }
-
-
 
 h2 {
     font-family: "futura-pt", sans-serif;
@@ -110,82 +103,18 @@ h2 {
     font-size: 1.6em;
 }
 
-img.difficulty {
-    width: 300px;
+.left-content img {
+    max-width: 50%;
 }
 
-img.chalk {
-    width: 10em;
+.tennisBall {
+ width: 100px;
 }
 
-img.pins {
-    width: 200px;
-}
 
-img.needle {
-    height: 10px;
-}
 
-img.tennisBall {
-    width: 120px;
-}
-
-img.iron {
-    width: 300px;
-}
-
-img.yarn {
-    width: 330px;
-}
-
-img.ruler {
-    width: 400px;
-}
-
-img.scissors {
-    width: 400px;
-}
-
-img.thread {
-    height: 120px;
-}
-
-img.jeans {
-    position: relative;
-    z-index: -1;
-    height: 400px;
-    bottom: 0px;
-}
-
-img.button {
-    height: 150px;
-}
-
-img.darn {
-    width: 800px;
-}
-
-img.Hem {
-    width: 500px;
-}
-
-img.sewbutton {
-    width: 500px;
-}
-
-#ladderStitch-intro{
-    margin-bottom: -65px;
-}
-#quote {
-    color:#7e78f2;
-    font-family: "futura-pt", sans-serif;
-    font-weight: normal;
-    font-style: italic;
-    font-size: 25px;
-    font-weight: 600px;
-}
  
-
-
-
+.right-content img {
+    width: 600px;
+}
 
