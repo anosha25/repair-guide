@@ -8,10 +8,16 @@
     font-style: italic;
 }
 
+p {
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
 /*styles for side menu*/
 .menu {
-    color: --blue;
-    line-height: 1.2em;
+    color: var(--blue);
+    line-height: 1.5em;
     font-family: "futura-pt", sans-serif;
     font-weight: normal;
     font-size: 2em;
@@ -22,16 +28,16 @@
 } 
 /*styles for side menu for list, anchor tag and hover*/
     .menu ul {
+        margin-top: 25px;
         list-style: none;
     }
 
-    .menu a:visited { 
-        color: --blue;
-    }
+   
 
     .menu a {
-        color: --blue;
+        color: var(--blue);
         text-decoration: none;
+        transition: color 0.1s ease;
     }
 
     .menu a:hover {
@@ -39,23 +45,19 @@
         font-style: italic;
     }
 
-    .menu a:visited {
-        color: var(--blue);
-    }
 
 /* left-content and right-content are positoned using float and padding for gutters*/
 
 .left-content {
-    padding-left: 20px;
+    padding-left: 5%;
     padding-right: 20px;
-    top: 3em;
     float: left;
-    width: 15%; 
+    width: 20%; 
 }
 
 .right-content {
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 5%;
     float: right;
     width: 40%;
 }
@@ -74,6 +76,7 @@ disabling float when the screen size is 900px or less*/
 
 /*styles applied to body text and background for website*/
 body {
+    padding-top: 1%;
     color: var(--blue);
     background-color: var(--background);
     font-family: "futura-pt", sans-serif;
@@ -84,20 +87,14 @@ body {
 
 .ingredients h2 {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 1.5em;
 }
 
-.ingredients p {
-    font-size: 20px;
-    font-weight: 200;
-    width: 400px;
-}
+
 
 
 .ingredients {
-    font-size: 2em;
     font-weight: 400;
-    width: 600px;
     color:--blue;
 }
 
@@ -107,18 +104,62 @@ h2 {
     font-size: 1.6em;
 }
 
-.left-content img {
-    max-width: 70%;
+.iron {
+    width: 100%;
 }
 
+.pins {
+    width: 100%;
+}
+
+
+.darn {
+    width: 100%;
+}
+
+.hem {
+    width: 100%;
+}
+
+.difficulty  {
+    width: 60%;
+}
+
+.chalk {
+    width: 70%;
+}
+
+.button {
+    width: 50%;
+}
+
+.sewbutton {
+   width: 70%; 
+}
+
+.needle {
+    width: 70%;
+}
+
+.ruler {
+    width: 100%;
+}
 .tennisBall {
- width: 100px;
+ width: 60%;
+}
+.yarn {
+    width: 100%;
+}
+.thread {
+    width: 50%;
 }
 
-
-
+.scissors {
+    width: 110%;
+}
  
-.right-content img {
-    width: 600px;
+.zine {
+    width: 80%;
 }
+
 
