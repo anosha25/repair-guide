@@ -1,8 +1,7 @@
 :root {
-    --purple: #7e78f2;
-    --yellow: #FFFF00;
-    --body: #000000;
-    --background: hsl(345, 61%, 28%);
+    --pink: #ff48b0;
+    --blue: #3255a4;
+    --background: #e6e6e6;
 } /* figuring out colour through this, made it easy for me to change colours */
 
 #quote {
@@ -11,11 +10,11 @@
 
 /*styles for side menu*/
 .menu {
-    color: #FFFF00;
+    color: --blue;
     line-height: 1.2em;
     font-family: "futura-pt", sans-serif;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 2em;
     text-decoration: none;
     padding-right: 20px;
     float: left;
@@ -27,17 +26,21 @@
     }
 
     .menu a:visited { 
-        color: #FFFF00;
+        color: --blue;
     }
 
     .menu a {
-        color: #FFFF00;
+        color: --blue;
         text-decoration: none;
     }
 
     .menu a:hover {
-        color: var(--purple);
+        color: var(--pink);
         font-style: italic;
+    }
+
+    .menu a:visited {
+        color: var(--blue);
     }
 
 /* left-content and right-content are positoned using float and padding for gutters*/
@@ -45,6 +48,7 @@
 .left-content {
     padding-left: 20px;
     padding-right: 20px;
+    top: 3em;
     float: left;
     width: 15%; 
 }
@@ -70,7 +74,7 @@ disabling float when the screen size is 900px or less*/
 
 /*styles applied to body text and background for website*/
 body {
-    color: #FFFF00;
+    color: var(--blue);
     background-color: var(--background);
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
@@ -79,7 +83,7 @@ body {
 }
 
 .ingredients h2 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 40px;
 }
 
@@ -94,17 +98,17 @@ body {
     font-size: 2em;
     font-weight: 400;
     width: 600px;
-    color:#FFFF00;
+    color:--blue;
 }
 
 h2 {
     font-family: "futura-pt", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.6em;
 }
 
 .left-content img {
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .tennisBall {
